@@ -16,8 +16,11 @@ function App() {
                 main: "#3E5641",
             },
             background: {
-                default: "#22181C",
+                default: "black",
             },
+            text: {
+                secondary: "#fff",
+            }
         },
     });
 
