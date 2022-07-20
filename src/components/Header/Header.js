@@ -11,6 +11,8 @@ function Header() {
         >
             <Toolbar>
                 <Typography
+                    component={Link}
+                    to="/"
                     variant="h2"
                     sx={{
                         color: "secondary",
@@ -18,6 +20,8 @@ function Header() {
                         lineHeight: "100px",
                         flexGrow: 1,
                         paddingLeft: "10%",
+                        textDecoration: "none",
+                        color: "text.primary"
                     }}
                 >
                     kenzie's copy
