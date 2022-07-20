@@ -1,4 +1,4 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Paper, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Header from "../Header/Header";
 
@@ -57,8 +57,9 @@ function Home() {
                     and<b> tapping into the truth;</b> discovering what your
                     audience really wants, and which messages will move them.
                 </Typography>
-                <img src={portrait} width="33%" />
 
+                <Paper component="img" src={portrait} elevation={24} sx={{margin: "10px 10px 10px 0px"}}/>
+                
                 <Stack width="33%" spacing={8}>
                     <Typography variant="h6" color="text.secondary">
                         They say acting is all about the "other person"—in this
