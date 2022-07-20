@@ -1,4 +1,5 @@
 import { AppBar, Button, Typography, Toolbar, Box, Stack } from "@mui/material";
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <AppBar
@@ -16,7 +17,7 @@ function Header() {
                         height: "100%",
                         lineHeight: "100px",
                         flexGrow: 1,
-                        paddingLeft: "10%"
+                        paddingLeft: "10%",
                     }}
                 >
                     kenzie's copy
@@ -29,26 +30,34 @@ function Header() {
                     paddingRight="10%"
                 >
                     <Button
+                        component={Link}
+                        to="/portfolio"
                         variant="contained"
                         color="secondary"
-                        href="/portfolio"
                     >
                         Portfolio
                     </Button>
-                    <Button variant="contained" color="secondary" href="/about">
+                    <Button
+                        component={Link}
+                        to="/about"
+                        variant="contained"
+                        color="secondary"
+                    >
                         About
                     </Button>
                     <Button
+                        component={Link}
+                        to="/process"
                         variant="contained"
                         color="secondary"
-                        href="/process"
                     >
                         Process
                     </Button>
                     <Button
+                        component={Link}
+                        to="/contact"
                         variant="contained"
                         color="secondary"
-                        href="/contact"
                     >
                         Contact
                     </Button>
