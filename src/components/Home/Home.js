@@ -24,7 +24,7 @@ function Home() {
                     flexDirection: "column",
                 }}
             >
-                <Box paddingTop="100px" paddingBottom="50px">
+                <Box paddingTop="75px" paddingBottom="50px">
                     <Typography variant="h1" color="text.secondary">
                         <b>Bold. Clever. Connective.</b>
                     </Typography>
