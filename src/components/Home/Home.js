@@ -1,5 +1,6 @@
 import { Container, Paper, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import ContactCard from "../ContactCard/ContactCard";
 import Header from "../Header/Header";
 
 import portrait from "./KenzieRoss_Headshot.jpeg";
@@ -82,11 +83,12 @@ function Home() {
                 </Stack>
             </Container>
             <Box
-                width="100vw"
                 height="50px"
                 bgcolor="primary.main"
                 padding="10px 10px 10px 10px"
             />
+
+            <ContactCard />
         </Box>
     );
 }
