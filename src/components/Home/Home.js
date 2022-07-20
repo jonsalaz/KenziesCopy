@@ -48,7 +48,7 @@ function Home() {
                     display: "flex",
                     flexDirection: "row",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                 }}
             >
                 <Typography variant="h6" color="text.secondary" width="33%">
@@ -74,7 +74,10 @@ function Home() {
                     <Typography variant="h6" color="text.secondary">
                         You have a business, a product, something to say—but
                         maybe you don’t have the words. Kenzie does have the
-                        words—and she wants to tell your story.
+                        words—
+                        <b>
+                            <i>and she wants to tell your story.</i>
+                        </b>
                     </Typography>
                 </Stack>
             </Container>
