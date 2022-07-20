@@ -5,6 +5,7 @@ import { CssBaseline } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import Home from "./components/Home/Home.js";
+import About from "./components/About/About.js";
 
 function App() {
     const theme = createTheme({
@@ -30,8 +31,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route index element={<Home />} />
-                    {/* <Route path="portfolio" element={<Portfolio />} />
                     <Route path="about" element={<About />} />
+                    {/* <Route path="portfolio" element={<Portfolio />} />
                     <Route path="process" element={<Process />} />
                     <Route path="contact" element={<Contact />} /> */}
                 </Routes>
