@@ -23,8 +23,8 @@ function Home() {
                 }}
             >
                 <Box paddingTop="100px" paddingBottom="50px">
-                    <Typography variant="h2" color="text.secondary">
-                        Bold. Clever. Connective.
+                    <Typography variant="h1" color="text.secondary">
+                        <b>Bold. Clever. Connective.</b>
                     </Typography>
                     <Typography variant="h4" color="text.secondary">
                         Kenzie's Copy Resonates-and Keeps Them Coming Back.
@@ -48,6 +48,7 @@ function Home() {
                     display: "flex",
                     flexDirection: "row",
                     alignItems: "center",
+                    justifyContent: "center"
                 }}
             >
                 <Typography variant="h6" color="text.secondary" width="33%">
@@ -58,8 +59,13 @@ function Home() {
                     audience really wants, and which messages will move them.
                 </Typography>
 
-                <Paper component="img" src={portrait} elevation={24} sx={{margin: "10px 10px 10px 0px"}}/>
-                
+                <Paper
+                    component="img"
+                    src={portrait}
+                    elevation={24}
+                    sx={{ margin: "10px 10px 10px 0px" }}
+                />
+
                 <Stack width="33%" spacing={8}>
                     <Typography variant="h6" color="text.secondary">
                         They say acting is all about the "other person"—in this
