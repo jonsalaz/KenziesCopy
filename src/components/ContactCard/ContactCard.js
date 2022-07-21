@@ -11,7 +11,7 @@ function ContactCard() {
                 margin: "25px",
             }}
         >
-            <Paper variant="outlined" elevation={24}>
+            <Paper variant="outlined">
                 <Stack
                     alignItems="center"
                     bgcolor="primary.main"

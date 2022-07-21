@@ -29,7 +29,7 @@ function Header() {
                 <Stack
                     direction="row"
                     justifyContent="center"
-                    aligntItems="center"
+                    alignItems="center"
                     spacing={2}
                     paddingRight="10%"
                 >
