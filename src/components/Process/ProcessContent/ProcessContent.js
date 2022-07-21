@@ -1,33 +1,34 @@
 import { Paper, Stack, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import ContactCard from "../../ContactCard/ContactCard";
 import ContentBox from "./ContentBox";
+import coffee from "./contentImages/Coffee.jpeg";
+import kenzie from "./contentImages/KenzieGrass.jpeg";
+import work from "./contentImages/WorkDesk.jpeg";
 
 function ProcessContent() {
-    function importAll(r) {
-        let images = {};
-        r.keys().map((item, index) => {
-            images[item.replace("./", "")] = r(item);
-        });
-        return images;
-    }
-
-    const images = importAll(
-        require.context("./contentImages", false, /\.(png|jpe?g|svg)$/)
-    );
-
-    console.log(images);
-
     return (
         <Stack
             direction="column"
             justifyContent="center"
+            alignItems="center"
             spacing={2}
-            sx={{ color: "text.secondary", margin: "0 10% 0 10%" }}
+            sx={{ color: "text.secondary", margin: "0 10% 0 10%", margin: "25px" }}
         >
-            <Typography variant="h2">Here's How it Happens</Typography>
-            <Stack direction="row">
-                <Stack direction="column" spacing={4} alignItems="flex-start">
+            <Stack
+                direction="row"
+                alignItems="stretch"
+                justifyContent="center"
+                spacing={8}
+            >
+                <Stack
+                    direction="column"
+                    justifyContent="space-evenly"
+                    spacing={4}
+                    alignItems="flex-start"
+                    width="40%"
+                >
+                    <Typography variant="h2" noWrap>Here's How it Happens</Typography>
+
                     <ContentBox
                         header="First: A Conversation"
                         content="Reach out with some details about the project, and Kenzie will get back to you about scheduling a call. Your needs/wants can be discussed in greater detail at that time."
@@ -53,8 +54,16 @@ function ProcessContent() {
                     <ContactCard />
                 </Stack>
 
-                <Stack direction="column" spacing={4}>
-                    
+                <Stack
+                    direction="column"
+                    spacing={4}
+                    width="20vw"
+                    minHeight={"100%"}
+                    justifyContent="space-evenly"
+                >
+                    <Paper component="img" src={coffee} />
+                    <Paper component="img" src={work} />
+                    <Paper component="img" src={kenzie} />
                 </Stack>
             </Stack>
         </Stack>
