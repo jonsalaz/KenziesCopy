@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import Home from "./components/Home/Home.js";
 import About from "./components/About/About.js";
+import Process from "./components/Process/Process.js";
 
 function App() {
     const theme = createTheme({
@@ -32,8 +33,8 @@ function App() {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
-                    {/* <Route path="portfolio" element={<Portfolio />} />
                     <Route path="process" element={<Process />} />
+                    {/* <Route path="portfolio" element={<Portfolio />} />
                     <Route path="contact" element={<Contact />} /> */}
                 </Routes>
             </BrowserRouter>
