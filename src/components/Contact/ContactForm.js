@@ -1,15 +1,11 @@
-import styled from "@emotion/styled";
 import {
     Button,
-    Divider,
-    InputAdornment,
     Stack,
     TextField,
     Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import SearchIcon from "@mui/icons-material/Search";
 
 function ContactForm() {
     const [firstName, setFirstName] = useState("");
