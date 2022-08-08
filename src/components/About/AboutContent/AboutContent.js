@@ -20,9 +20,6 @@ function AboutContent() {
                     alignItems="flex-start"
                     justifyContent="center"
                     spacing={4}
-                    sx={{
-                        color: "text.secondary",
-                    }}
                 >
                     <Typography variant="h2">
                         The Kenzie Behind the Copy

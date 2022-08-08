@@ -21,8 +21,8 @@ function App() {
                 main: "#3E5641",
             },
             text: {
-                primary: "#000000",
-                secondary: "#ffffff",
+                primary: "#ffffff",
+                secondary: "#000000",
             },
         },
     });

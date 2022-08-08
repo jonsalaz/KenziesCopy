@@ -34,8 +34,12 @@ function PortfolioItem(props) {
 
     return (
         <Grid item maxWidth={"25%"}>
-            <Card sx={{ height: "100%" }}>
-                <Stack height="100%" direction="column" justifyContent="space-around">
+            <Card raised sx={{ height: "100%" }}>
+                <Stack
+                    height="100%"
+                    direction="column"
+                    justifyContent="space-around"
+                >
                     <CardHeader title={props.title} />
                     <CardMedia
                         component="img"
