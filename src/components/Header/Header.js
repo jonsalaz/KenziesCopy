@@ -7,6 +7,7 @@ function Header() {
             position="static"
             component="nav"
             sx={{
+                bgcolor: "primary.main",
                 height: "100px",
             }}
         >
@@ -21,6 +22,7 @@ function Header() {
                         flexGrow: 1,
                         paddingLeft: "10%",
                         textDecoration: "none",
+                        color: "text.secondary"
                     }}
                 >
                     kenzie's copy

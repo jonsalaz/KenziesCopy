@@ -25,10 +25,10 @@ function Home() {
                 }}
             >
                 <Box paddingTop="75px" paddingBottom="50px">
-                    <Typography variant="h1" color="text.secondary">
+                    <Typography variant="h1">
                         <b>Bold. Clever. Connective.</b>
                     </Typography>
-                    <Typography variant="h4" color="text.secondary">
+                    <Typography variant="h4">
                         Kenzie's Copy Resonates-and Keeps Them Coming Back.
                     </Typography>
                 </Box>
@@ -38,7 +38,7 @@ function Home() {
                 bgcolor="primary.main"
                 padding="10px 10px 10px 10px"
             >
-                <Typography variant="h4" padding="0 0 0 25%">
+                <Typography variant="h4" color="text.secondary" padding="0 0 0 25%">
                     You're the Main Character
                 </Typography>
             </Box>
@@ -53,7 +53,7 @@ function Home() {
                     justifyContent: "center",
                 }}
             >
-                <Typography variant="h6" color="text.secondary" width="33%">
+                <Typography variant="h6" width="33%">
                     Kenzie’s background as an actor, reader/writer, and
                     Communications student renders her abundantly capable of
                     <b> fostering connection, capturing attention,</b>
@@ -69,11 +69,11 @@ function Home() {
                 />
 
                 <Stack width="33%" spacing={8}>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="h6">
                         They say acting is all about the "other person"—in this
                         case, that “other person” is you.
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="h6">
                         You have a business, a product, something to say—but
                         maybe you don’t have the words. Kenzie does have the
                         words—
