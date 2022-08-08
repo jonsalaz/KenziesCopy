@@ -23,8 +23,9 @@ function App() {
                 default: "black",
             },
             text: {
-                secondary: "#fff",
-            }
+                primary: "#000000",
+                secondary: "#ffffff",
+            },
         },
     });
 
