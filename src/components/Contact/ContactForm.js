@@ -1,54 +1,81 @@
 import {
     Button,
     Divider,
+    Paper,
     Stack,
     TextField,
     Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 function ContactForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
+    const [content, setContent] = useState("");
+    const [status, setStatus] = useState();
+
+    function sendEmail(e) {
+        emailjs
+            .send(
+                "service_d5jh09m",
+                "template_ilo8wob",
+                { firstName, lastName, email, content },
+                "knKUl0SJGls41gEcm"
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setStatus("success");
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                    setStatus("error");
+                }
+            );
+    }
 
     return (
-        <Box
-            maxWidth="50%"
-            color="text.secondary"
-            sx={{
-                input: { color: "text.secondary" },
-                textArea: { color: "text.secondary" },
-            }}
+        <Stack
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            width="100vw"
+            height="calc(100vh - 250px)"
         >
-            <Typography variant="h4" padding="10px">
-                Contact Me
-            </Typography>
-            <Divider />
-            <Stack spacing={2}>
+            <Paper elevation={4} sx={{ width: "50%", padding: "25px" }}>
+                <Typography variant="h4" padding="10px">
+                    Get In Touch
+                </Typography>
+                <Divider />
                 <Stack
-                    direction="row"
-                    spacing={4}
-                    justifyContent="space-between"
+                    marginTop="10px"
+                    spacing={6}
+                    alignItems="flex-start"
+                    justifyContent="space-around"
+                    sx={{ label: { color: "text.primary" } }}
                 >
-                    <TextField
-                        variant="standard"
-                        required
-                        label="First Name"
-                        autoComplete="off"
-                        onChange={(e) => setFirstName(e.target.value)}
-                    />
+                    <Stack direction="row" spacing={4}>
+                        <TextField
+                            variant="standard"
+                            required
+                            label="First Name"
+                            autoComplete="off"
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
 
-                    <TextField
-                        required
-                        type="text"
-                        label="Last Name"
-                        variant="standard"
-                        onChange={(e) => {
-                            setLastName(e.target.value);
-                        }}
-                    />
+                        <TextField
+                            required
+                            type="text"
+                            label="Last Name"
+                            variant="standard"
+                            onChange={(e) => {
+                                setLastName(e.target.value);
+                            }}
+                        />
+                    </Stack>
                     <TextField
                         required
                         type="email"
@@ -58,17 +85,38 @@ function ContactForm() {
                             setEmail(e.target.value);
                         }}
                     />
+                    <TextField
+                        required
+                        multiline
+                        label="Email Contents"
+                        variant="standard"
+                        fullWidth
+                        onChange={(e) => {
+                            setContent(e.target.value);
+                        }}
+                    />
+                    <Stack
+                        direction="row"
+                        alignItems="center"
+                        spacing={2}
+                    >
+                        <Button variant="contained" onClick={sendEmail}>
+                            Submit
+                        </Button>
+                        {status == "success" ? (
+                            <Typography>Success!</Typography>
+                        ) : (
+                            <Typography></Typography>
+                        )}
+                        {status == "error" ? (
+                            <Typography>Error...</Typography>
+                        ) : (
+                            <Typography></Typography>
+                        )}
+                    </Stack>
                 </Stack>
-                <TextField
-                    required
-                    multiline
-                    label="Email Contents"
-                    variant="standard"
-                    fullWidth
-                />
-                <Button variant="contained">Submit</Button>
-            </Stack>
-        </Box>
+            </Paper>
+        </Stack>
     );
 }
 
