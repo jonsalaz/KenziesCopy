@@ -1,5 +1,7 @@
 import {
+    Backdrop,
     Button,
+    CircularProgress,
     Divider,
     Paper,
     Stack,
@@ -16,8 +18,10 @@ function ContactForm() {
     const [email, setEmail] = useState("");
     const [content, setContent] = useState("");
     const [status, setStatus] = useState();
+    const [open, setOpen] = useState(false);
 
     function sendEmail(e) {
+        setOpen(true);
         emailjs
             .send(
                 "service_d5jh09m",
@@ -29,10 +33,12 @@ function ContactForm() {
                 (response) => {
                     console.log("SUCCESS!", response.status, response.text);
                     setStatus("success");
+                    setOpen(false);
                 },
                 (error) => {
                     console.log("FAILED...", error);
                     setStatus("error");
+                    setOpen(false);
                 }
             );
     }
@@ -45,6 +51,14 @@ function ContactForm() {
             width="100vw"
             height="calc(100vh - 250px)"
         >
+            <Backdrop
+                sx={{
+                    zIndex: (theme) => theme.zIndex.drawer + 1,
+                }}
+                open={open}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
             <Paper elevation={4} sx={{ width: "50%", padding: "25px" }}>
                 <Typography variant="h4" padding="10px">
                     Get In Touch
@@ -95,11 +109,7 @@ function ContactForm() {
                             setContent(e.target.value);
                         }}
                     />
-                    <Stack
-                        direction="row"
-                        alignItems="center"
-                        spacing={2}
-                    >
+                    <Stack direction="row" alignItems="center" spacing={2}>
                         <Button variant="contained" onClick={sendEmail}>
                             Submit
                         </Button>
