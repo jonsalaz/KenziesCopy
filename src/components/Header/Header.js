@@ -1,5 +1,6 @@
 import { AppBar, Button, Typography, Toolbar, Box, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <AppBar
@@ -15,13 +16,11 @@ function Header() {
                     to="/"
                     variant="h2"
                     sx={{
-                        color: "secondary",
                         height: "100%",
                         lineHeight: "100px",
                         flexGrow: 1,
                         paddingLeft: "10%",
                         textDecoration: "none",
-                        color: "text.primary"
                     }}
                 >
                     kenzie's copy
