@@ -1,5 +1,6 @@
 import {
     Button,
+    Divider,
     Stack,
     TextField,
     Typography,
@@ -24,6 +25,7 @@ function ContactForm() {
             <Typography variant="h4" padding="10px">
                 Contact Me
             </Typography>
+            <Divider />
             <Stack spacing={2}>
                 <Stack
                     direction="row"
