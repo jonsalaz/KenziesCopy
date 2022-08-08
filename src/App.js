@@ -13,14 +13,12 @@ import Contact from "./components/Contact/Contact.js";
 function App() {
     const theme = createTheme({
         palette: {
+            mode: "dark",
             primary: {
                 main: "#F7E6D1",
             },
             secondary: {
                 main: "#3E5641",
-            },
-            background: {
-                default: "black",
             },
             text: {
                 primary: "#000000",
