@@ -15,7 +15,7 @@ function ContactCard() {
                 <Stack
                     alignItems="center"
                     bgcolor="primary.main"
-                    sx={{ padding: "25px" }}
+                    sx={{ padding: "25px", color: "text.secondary" }}
                 >
                     <Typography variant="h4" textAlign="center">
                         Have a story to tell?

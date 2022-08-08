@@ -12,7 +12,7 @@ function ProcessContent() {
             justifyContent="center"
             alignItems="center"
             spacing={2}
-            sx={{ color: "text.secondary", margin: "0 10% 0 10%", margin: "25px" }}
+            sx={{ margin: "0 10% 0 10%", margin: "25px" }}
         >
             <Stack
                 direction="row"
