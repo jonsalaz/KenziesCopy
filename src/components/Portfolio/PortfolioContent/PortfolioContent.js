@@ -13,7 +13,6 @@ function PortfolioContent() {
             justifyContent="space-evenly"
             alignItems="stretch"
             width="100%"
-            color="text.secondary"
         >
             <PortfolioItem
                 title="SPEC Rare Beauty Email Ad"
