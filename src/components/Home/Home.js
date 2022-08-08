@@ -83,11 +83,11 @@ function Home() {
                     </Typography>
                 </Stack>
             </Container>
-            <Box
+            {/* <Box
                 height="50px"
                 bgcolor="primary.main"
                 padding="10px 10px 10px 10px"
-            />
+            /> */}
 
             <ContactCard />
             <Footer />
