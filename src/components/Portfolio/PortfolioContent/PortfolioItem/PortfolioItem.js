@@ -49,7 +49,12 @@ function PortfolioItem(props) {
                         <Typography variant="body1">{props.summary}</Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <Button onClick={() => setOpen(true)}>See More</Button>
+                        <Button
+                            variant="contained"
+                            onClick={() => setOpen(true)}
+                        >
+                            See More
+                        </Button>
                     </CardActions>
                 </Stack>
             </Card>
