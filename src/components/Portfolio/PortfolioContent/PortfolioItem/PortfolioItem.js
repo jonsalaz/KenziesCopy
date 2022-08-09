@@ -1,39 +1,38 @@
 import styled from "@emotion/styled";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
+    Button,
     Card,
     CardActions,
     CardContent,
     CardHeader,
     CardMedia,
-    Collapse,
     Grid,
     IconButton,
     Stack,
     Typography,
 } from "@mui/material";
 import { useState } from "react";
-
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-    transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-    marginLeft: "auto",
-    transition: theme.transitions.create("transform", {
-        duration: theme.transitions.duration.shortest,
-    }),
-}));
+import PortfolioItemDetails from "./PortfolioItemDetails/PortfolioItemDetails";
 
 function PortfolioItem(props) {
-    const [expanded, setExpanded] = useState(false);
+    const [open, setOpen] = useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
+    const handleClose= () => {
+        setOpen(false);
+    }
 
     return (
         <Grid item maxWidth={"25%"}>
+            <PortfolioItemDetails
+                open={open}
+                onClose={handleClose}
+                title={props.title}
+                image={props.image}
+                goal={props.goal}
+                challenge={props.challenge}
+                solution={props.solution}
+            />
             <Card raised sx={{ height: "100%" }}>
                 <Stack
                     height="100%"
@@ -50,28 +49,8 @@ function PortfolioItem(props) {
                         <Typography variant="body1">{props.summary}</Typography>
                     </CardContent>
                     <CardActions disableSpacing>
-                        <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </ExpandMore>
+                        <Button onClick={() => setOpen(true)}>See More</Button>
                     </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography variant="body1">
-                                <b>Goal:</b> {props.goal}
-                            </Typography>
-                            <Typography variant="body1">
-                                <b>Challenge:</b> {props.challenge}
-                            </Typography>
-                            <Typography variant="body1">
-                                <b>Solution:</b> {props.solution}
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
                 </Stack>
             </Card>
         </Grid>
