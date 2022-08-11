@@ -5,13 +5,13 @@ import Kenzie from "./AboutKenzie.jpeg";
 function AboutContent() {
     return (
         <Box
-            minHeight='calc(100vh - 250px)'
+            minHeight="calc(100vh - 250px)"
             width="100vw"
             sx={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                margin: "25px"
+                margin: "25px",
             }}
         >
             <Stack direction="row" spacing={10} margin="0 10% 0 10%">
@@ -30,11 +30,12 @@ function AboutContent() {
                         My work is all about understanding others. Our
                         similarities, our differences.
                         <b>
-                            How to send messages—and ensure they're understood.
+                            &nbsp;How to send messages—and ensure they're
+                            understood.
                         </b>
-                        How someone in any set of circumstances would really,
-                        truly be feeling and behaving at any given moment. All
-                        of that—
+                        &nbsp; How someone in any set of circumstances would
+                        really, truly be feeling and behaving at any given
+                        moment. All of that—
                         <b>
                             the reaching out, the asking questions, the
                             empathy—is what makes my copy sing.
@@ -46,7 +47,7 @@ function AboutContent() {
                         they really feel? What would they be most likely to do?
                         The answers I come up with result in
                         <b>
-                            copy that speaks directly to the desires and
+                            &nbsp;copy that speaks directly to the desires and
                             emotions of your target audience—which you'll notice
                             in your bottom line.
                         </b>
