@@ -11,7 +11,8 @@ function ContactCard() {
                 margin: "25px",
             }}
         >
-            <Paper variant="outlined" sx={{bgcolor: "primary.main"}}>
+            <Paper variant="outlined" sx={{bgcolor: "primary.main",
+        border: "3px solid black"}}>
                 <Stack
                     alignItems="center"
                     sx={{ padding: "25px", color: "text.secondary" }}
