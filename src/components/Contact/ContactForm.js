@@ -23,10 +23,10 @@ function ContactForm() {
         setOpen(true);
         emailjs
             .send(
-                "service_d5jh09m",
-                "template_ilo8wob",
+                "service_bwcw1pc",
+                "template_ankf6xp",
                 { firstName, lastName, email, content },
-                "knKUl0SJGls41gEcm"
+                "6C1j_vjSp6ueyw1Rp"
             )
             .then(
                 (response) => {
