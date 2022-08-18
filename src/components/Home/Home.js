@@ -16,23 +16,14 @@ function Home() {
             }}
         >
             <Header />
-            <Container
-                disableGutters
-                maxWidth="xl"
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                <Box padding="20px">
-                    <Typography variant="h1">
-                        <b>Bold. Clever. Connective.</b>
-                    </Typography>
-                    <Typography variant="h4">
-                        Kenzie's Copy Resonates-and Keeps Them Coming Back.
-                    </Typography>
-                </Box>
-            </Container>
+            <Stack padding="2% 10% 2% 10%">
+                <Typography variant="h1">
+                    <b>Bold. Clever. Connective.</b>
+                </Typography>
+                <Typography variant="h4">
+                    Kenzie's Copy Resonates—and Keeps Them Coming Back.
+                </Typography>
+            </Stack>
             <Box
                 width="100vw"
                 bgcolor="primary.main"
@@ -40,7 +31,11 @@ function Home() {
                 elevation="1"
                 component={Paper}
             >
-                <Typography variant="h4" color="text.secondary" padding="0 0 0 25%">
+                <Typography
+                    variant="h4"
+                    color="text.secondary"
+                    padding="0 0 0 10%"
+                >
                     You're the Main Character
                 </Typography>
             </Box>
@@ -53,6 +48,7 @@ function Home() {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
+                    padding: "50px"
                 }}
             >
                 <Typography variant="h5" width="33%">
@@ -85,13 +81,8 @@ function Home() {
                     </Typography>
                 </Stack>
             </Container>
-            {/* <Box
-                height="50px"
-                bgcolor="primary.main"
-                padding="10px 10px 10px 10px"
-            /> */}
-
             <ContactCard />
+            <div style={{padding: "25px"}}>{null}</ div>
             <Footer />
         </Box>
     );
