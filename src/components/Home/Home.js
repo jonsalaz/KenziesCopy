@@ -37,6 +37,8 @@ function Home() {
                 width="100vw"
                 bgcolor="primary.main"
                 padding="10px 10px 10px 10px"
+                elevation="1"
+                component={Paper}
             >
                 <Typography variant="h4" color="text.secondary" padding="0 0 0 25%">
                     You're the Main Character
