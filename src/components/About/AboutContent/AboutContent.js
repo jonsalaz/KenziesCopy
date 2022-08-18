@@ -63,7 +63,7 @@ function AboutContent() {
                 <Box
                     component="img"
                     src={Kenzie}
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", width: "50%" }}
                 />
             </Stack>
         </Box>
