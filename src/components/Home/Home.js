@@ -15,7 +15,7 @@ function Home() {
                 backgroundSize: "cover",
                 minHeight: "100vh",
                 width: "100vw",
-                paddingBottom: "10px"
+                paddingBottom: "10px",
             }}
         >
             <Header />
@@ -58,7 +58,7 @@ function Home() {
                     >
                         Kenzie’s background as an actor, reader/writer, and
                         Communications student renders her abundantly capable of
-                        <b> fostering connection, capturing attention,</b>
+                        <b> fostering connection, capturing attention,&nbsp;</b>
                         and<b> tapping into the truth;</b> discovering what your
                         audience really wants, and which messages will move
                         them.
