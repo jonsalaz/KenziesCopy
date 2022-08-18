@@ -57,13 +57,13 @@ function ProcessContent() {
                 <Stack
                     direction="column"
                     spacing={4}
-                    width="20vw"
+                    width="25vw"
                     minHeight={"100%"}
                     justifyContent="space-evenly"
                 >
-                    <Paper component="img" src={coffee} />
-                    <Paper component="img" src={work} />
-                    <Paper component="img" src={kenzie} />
+                    <Paper elevation={2} component="img" src={coffee} />
+                    <Paper elevation={2} component="img" src={work} />
+                    <Paper elevation={2} component="img" src={kenzie} />
                 </Stack>
             </Stack>
         </Stack>
