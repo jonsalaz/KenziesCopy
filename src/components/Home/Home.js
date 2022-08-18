@@ -48,7 +48,11 @@ function Home() {
                     alignItems="center"
                     padding="50px 0 50px 0"
                 >
-                    <Typography variant="h5" width="33%">
+                    <Typography
+                        variant="h5"
+                        width="33%"
+                        style={{ lineHeight: "40px" }}
+                    >
                         Kenzie’s background as an actor, reader/writer, and
                         Communications student renders her abundantly capable of
                         <b> fostering connection, capturing attention,</b>
