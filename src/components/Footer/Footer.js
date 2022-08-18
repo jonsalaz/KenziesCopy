@@ -11,34 +11,26 @@ function Footer() {
                 alignItems: "center",
             }}
         >
-            <Box
-                width="100%"
-                height="50px"
-                bgcolor="secondary.main"
-                padding="10px"
-            />
             <Paper
+                elevation={4}
                 sx={{
                     width: "95vw",
                     height: "75px",
                     position: "absolute",
                     bgcolor: "primary.main",
-                    color: "text.secondary"
+                    color: "text.secondary",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center"
                 }}
             >
                 <Typography
                     variant="h4"
-                    sx={{
-                        position: "absolute",
-                        right: "33%",
-                        top: "10%"
-                    }}
                 >
                     <b>kenzie's copy</b>
                 </Typography>
-                <Typography
-                    sx={{ position: "absolute", right: "30%", top: "60%" }}
-                >
+                <Typography>
                     Bold. Clever. Connective.
                 </Typography>
             </Paper>
