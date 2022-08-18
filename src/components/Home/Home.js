@@ -24,7 +24,7 @@ function Home() {
                     flexDirection: "column",
                 }}
             >
-                <Box paddingTop="75px" paddingBottom="50px">
+                <Box padding="20px">
                     <Typography variant="h1">
                         <b>Bold. Clever. Connective.</b>
                     </Typography>
@@ -55,7 +55,7 @@ function Home() {
                     justifyContent: "center",
                 }}
             >
-                <Typography variant="h6" width="33%">
+                <Typography variant="h5" width="33%">
                     Kenzie’s background as an actor, reader/writer, and
                     Communications student renders her abundantly capable of
                     <b> fostering connection, capturing attention,</b>
@@ -71,11 +71,11 @@ function Home() {
                 />
 
                 <Stack width="33%" spacing={8}>
-                    <Typography variant="h6">
+                    <Typography variant="h5">
                         They say acting is all about the "other person"—in this
                         case, that “other person” is you.
                     </Typography>
-                    <Typography variant="h6">
+                    <Typography variant="h5">
                         You have a business, a product, something to say—but
                         maybe you don’t have the words. Kenzie does have the
                         words—
