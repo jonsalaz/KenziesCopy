@@ -25,8 +25,8 @@ function AboutContent() {
                         The Kenzie Behind the Copy
                     </Typography>
                     <Typography variant="h4">An Empathy Expert</Typography>
-                    <Typography variant="body1">Hi, i'm Kenzie.</Typography>
-                    <Typography variant="body1">
+                    <Typography variant="h6">Hi, I'm Kenzie.</Typography>
+                    <Typography variant="h6">
                         My work is all about understanding others. Our
                         similarities, our differences.
                         <b>
@@ -41,7 +41,7 @@ function AboutContent() {
                             empathy—is what makes my copy sing.
                         </b>
                     </Typography>
-                    <Typography variant="body1">
+                    <Typography variant="h6">
                         My role {"("}and the fuel to my fire{")"} is to always
                         be asking: what does this person really want? How do
                         they really feel? What would they be most likely to do?
@@ -54,13 +54,17 @@ function AboutContent() {
                         The consumer gets what they want, and so do
                         you—everybody wins.
                     </Typography>
-                    <Typography>So, that's me.</Typography>
-                    <Typography>Ready to get busy?</Typography>
+                    <Typography variant="h5">So, that's me.</Typography>
+                    <Typography variant="h5">Ready to get busy?</Typography>
                     <Button component={Link} to="/contact" variant="contained">
                         Let's Talk Copy
                     </Button>
                 </Stack>
-                <Box component="img" src={Kenzie} />
+                <Box
+                    component="img"
+                    src={Kenzie}
+                    style={{ objectFit: "cover" }}
+                />
             </Stack>
         </Box>
     );
