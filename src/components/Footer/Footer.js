@@ -14,7 +14,7 @@ function Footer() {
             <Box
                 width="100%"
                 height="50px"
-                bgcolor="primary.main"
+                bgcolor="secondary.main"
                 padding="10px"
             />
             <Paper
