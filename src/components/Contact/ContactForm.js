@@ -73,6 +73,7 @@ function ContactForm() {
                 >
                     <Stack direction="row" spacing={4}>
                         <TextField
+                            color="success"
                             variant="standard"
                             required
                             label="First Name"
@@ -82,6 +83,7 @@ function ContactForm() {
 
                         <TextField
                             required
+                            color="success"
                             type="text"
                             label="Last Name"
                             variant="standard"
@@ -92,6 +94,7 @@ function ContactForm() {
                     </Stack>
                     <TextField
                         required
+                        color="success"
                         type="email"
                         label="Email"
                         variant="standard"
@@ -101,6 +104,7 @@ function ContactForm() {
                     />
                     <TextField
                         required
+                        color="success"
                         multiline
                         label="Email Contents"
                         variant="standard"
