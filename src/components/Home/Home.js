@@ -5,14 +5,17 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
 import portrait from "./KenzieRoss_Headshot.jpeg";
+import bg from "./bg.jpg"
 
 function Home() {
     return (
         <Box
             sx={{
-                bgcolor: "background.main",
+                backgroundImage: `url(${bg})`,
+                backgroundSize: "cover",
                 minHeight: "100vh",
                 width: "100vw",
+                paddingBottom: "10px"
             }}
         >
             <Header />
