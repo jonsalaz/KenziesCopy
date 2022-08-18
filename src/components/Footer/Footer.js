@@ -22,7 +22,7 @@ function Footer() {
                     width: "95vw",
                     height: "75px",
                     position: "absolute",
-                    bgcolor: "white",
+                    bgcolor: "primary.main",
                     color: "text.secondary"
                 }}
             >
